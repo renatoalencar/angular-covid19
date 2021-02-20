@@ -1,0 +1,24 @@
+<form (ngSubmit)="onSubmit()" #form="ngForm">
+  <input
+    type="text"
+    [(ngModel)]="current.country"
+    name="country"
+    placeholder="País"
+  />
+
+  <input
+    type="text"
+    [(ngModel)]="current.order"
+    name="order"
+    placeholder="Ordem"
+  />
+
+  <input
+    type="text"
+    [(ngModel)]="current.sort"
+    name="sort"
+    placeholder="Ordenar por"
+  />
+
+  <button type="submit">Aplicar</button>
+</form>

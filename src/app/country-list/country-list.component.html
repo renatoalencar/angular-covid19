@@ -1,10 +1,12 @@
+<app-filter (filter)="onFilter($event)"></app-filter>
+
 <table *ngIf="countries">
     <tr>
       <td>País</td>
       <td>Infectados</td>
       <td>Recuperados</td>
     </tr>
-    <tr *ngFor="let country of countries">
+    <tr *ngFor="let country of filteredCountries">
       <td>
         <h2>{{ country.country }}</h2>
       </td>
