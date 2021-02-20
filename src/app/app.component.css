@@ -1,0 +1,13 @@
+.app-root {
+    max-width: 900px;
+    margin: auto;
+}
+
+.state {
+    width: 3.4em;
+    display: inline-block;
+}
+
+li {
+    margin: 1em 0;
+}

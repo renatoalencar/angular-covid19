@@ -1,0 +1,22 @@
+<table *ngIf="countries">
+    <tr>
+      <td>País</td>
+      <td>Infectados</td>
+      <td>Recuperados</td>
+    </tr>
+    <tr *ngFor="let country of countries">
+      <td>
+        <h2>{{ country.country }}</h2>
+      </td>
+      
+      <td>
+        {{ country.infected }}
+      </td>
+      <td>
+        {{ country.recovered }}
+      </td>
+      <td>
+        <a [routerLink]="['/country', getCountryId(country)]">mais dados</a>
+      </td>
+    </tr>
+  </table>

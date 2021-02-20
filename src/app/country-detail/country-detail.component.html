@@ -1,0 +1,18 @@
+<div class="app-root">
+  <div *ngIf="data">
+    <canvas
+      baseChart
+      [datasets]="data"
+      [options]="options"
+      chartType="scatter"
+    ></canvas>
+  </div>
+
+  <ul *ngIf="stats">
+    <li *ngFor="let region of stats.infectedByRegion">
+      <span class="state">{{ region.state }}</span>
+
+      {{ region.count }}
+    </li>
+  </ul>
+</div>
